@@ -1,8 +1,4 @@
-<img src="./logo/Bitcoin.js-transparent.png" alt="BitcoinJS kawaii logo" width="50%" />
-
-(Logo by [@sawaratsuki1004](https://x.com/sawaratsuki1004))
-
-([LICENSE for the logo is on SAWARATSUKI Github repo](https://github.com/SAWARATSUKI/KawaiiLogos/blob/main/README_EN.md))
+# bitcoinjs-lib
 
 [![Github CI](https://github.com/bitcoinjs/bitcoinjs-lib/actions/workflows/main_ci.yml/badge.svg)](https://github.com/bitcoinjs/bitcoinjs-lib/actions/workflows/main_ci.yml) [![NPM](https://img.shields.io/npm/v/bitcoinjs-lib.svg)](https://www.npmjs.org/package/bitcoinjs-lib) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 
@@ -111,7 +107,7 @@ Which you can then import as an ESM module:
 When utilizing Taproot features with bitcoinjs-lib, you may need to include an additional ECC (Elliptic Curve Cryptography) library. The commonly used `tiny-secp256k1` library, however, might lead to compatibility issues due to its reliance on WASM (WebAssembly). The following alternatives may be used instead, though they may be significantly slower for high volume of signing and pubkey deriving operations.
 
 #### Alternatives for ECC Library:
-1. `@bitcoinjs-lib/tiny-secp256k1-asmjs`
+1. `@bitcoin-js/tiny-secp256k1-asmjs`
    A version of `tiny-secp256k1` compiled to ASM.js directly from the WASM version, potentially better supported in browsers. This is the slowest option.
 2. `@bitcoinerlab/secp256k1`
    Another alternative library for ECC functionality. This requires access to the global `BigInt` primitive.
