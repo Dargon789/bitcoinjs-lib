@@ -103,7 +103,7 @@
     "proxyquire": "^2.0.1",
     "randombytes": "^2.1.0",
     "regtest-client": "0.2.0",
-    "rimraf": "^4.3.1",
+    "rimraf": "^6.0.1",
     "tiny-secp256k1": "^2.2.0",
     "tsx": "^4.17.0",
     "typedoc": "^0.26.6",
